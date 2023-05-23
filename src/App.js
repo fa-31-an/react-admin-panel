@@ -1,9 +1,14 @@
-function App() {
+import { Layout } from "./layout";
+import { AppRoutes } from "./routes";
+
+export const App = () => {
   return (
     <div className="App">
-      <h1>
-        <p>chetoli</p>
-      </h1>
+      <>
+        <Layout>
+          <AppRoutes />
+        </Layout>
+      </>
     </div>
   );
 };
